@@ -119,9 +119,16 @@ export function HeroSection() {
           >
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-blue-500/20 flex items-center justify-center">
-                <div className="w-72 h-72 rounded-full bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center text-white text-6xl font-bold">
-                  LQ
-                </div>
+                <div className="w-72 h-72 rounded-full overflow-hidden bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center">
+              <Image
+                src="https://res.cloudinary.com/dbsluwttv/image/upload/v1754541288/Foto_8_ca5toq.png"
+                alt="Leonardo Quintero"
+                width={288} // 72 * 4
+                height={288}
+                className="object-cover w-full h-full"
+                priority
+              />
+            </div>
               </div>
               {/* Floating elements */}
               <motion.div
